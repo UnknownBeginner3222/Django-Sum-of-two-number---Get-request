@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+{% block content%}
+<div class="container" style=" padding:20px;">
+<div class="card" style="margin:0px; padding:20px">
+<H1 class='text-center'>Addition of two number</H1>
+
+<form action="add">
+<!--{% csrf_token %}-->
+  <div class="form-group">
+    <label for="exampleInputEmail1">Enter First Number :</label>
+    <input type="text" class="form-control" name="num1" id="first number">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Enter Second Number :</label>
+    <input type="text" class="form-control" name="num2" id="second number">
+  </div>
+  <div class="text-center">
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>
+</div>
+
+
+{% endblock %}
